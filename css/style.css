@@ -46,8 +46,12 @@ img{
     flex-wrap: nowrap;
 }
 
-.small-text{
+.x-small-text{
     font-size: 10px;
+}
+
+.small-text{
+    font-size: 13px;
 }
 
 .medium-text{
@@ -106,7 +110,8 @@ img{
 
 .side-bar__menu{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+    margin-bottom: 20px;   
 }
 
 .side-bar__menu-items{
@@ -136,6 +141,47 @@ img{
 
 .side-bar__menu-items:hover .menu-items__description{
     color: var(--light);
+}
+
+/* Side bar Create playlist */
+
+.side-bar__playlist{
+    padding-left: 20px;
+}
+
+.playlist__title{
+    color: var(--light);
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 14px 0px;
+}
+
+.playlist__create{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.playlist__create-icon{
+    font-size: 36px;
+}
+
+.playlist__create-text{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.side-bar__playlist-items{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.side-bar__playlist-items li:hover{
+    color: var(--light);
+    cursor: pointer;
 }
 
 
@@ -333,6 +379,10 @@ img{
     }
 
     .menu-items__description{
+        display: none;
+    }
+
+    .side-bar__playlist{
         display: none;
     }
  }
