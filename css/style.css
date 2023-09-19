@@ -391,6 +391,10 @@ img{
         margin-left: 18px;
     }
 
+    .toolbar__player-slider{
+        gap: 10px;
+    }
+
     .toolbar__utility-volume{
         display: none;
     }
@@ -400,8 +404,16 @@ img{
  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
+    .toolbar__current-img{
+        width: 30px;
+    }
+
     .toolbar__current-icon{
         margin-left: 10px;
+    }
+
+    .toolbar__utility{
+        gap: 7px;
     }
 
     .app__side-bar{
