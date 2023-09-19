@@ -35,6 +35,15 @@ img{
     --green: #ADFF2F;
 }
 
+/* utility classes */
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
 /* App divisions */
 
 .app{
@@ -49,6 +58,7 @@ img{
 
 .app__toolbar{
     height: 90px;
+    background-color: var(--dark-grey);
 }
 
 /* debug */
@@ -60,4 +70,14 @@ img{
 
 .debug .app__toolbar{
     border: 1px dashed blue;
+}
+
+.debug .toolbar{
+    border: 1px dashed yellow;
+    padding: 10px;
+}
+
+[class^='toolbar__']{
+    border: 1px dashed purple;
+    padding: 10px;
 }
