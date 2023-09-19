@@ -105,6 +105,8 @@ img{
 
 .toolbar__current-icon{
     margin-left: 30px;
+    display: flex;
+    gap: 12px;
 }
 
 /* Media player */
@@ -171,7 +173,20 @@ img{
 
 .player-slider__bar-fill:hover{
     background-color: #ADFF2F;
-    opacity: 1;
+}
+
+/* toolbar utility */
+
+.toolbar__utility{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--light);
+    flex-basis: 15%;
+}
+
+.toolbar__utility-volume{
+   flex-grow: 1;
 }
 
 /* media query */
@@ -186,6 +201,9 @@ img{
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .toolbar__current-icon{
+        flex-direction: column;
+    }
 
 
  }
