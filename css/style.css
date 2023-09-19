@@ -113,6 +113,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex-basis: 50%;
 }
 
 .toolbar__player-icons{
@@ -125,8 +126,53 @@ img{
 
 .player-icons__play{
     padding: 0px 10px;
+    font-size: 30px;
 }
 
+/* toolbar media player slider */
+
+.toolbar__player-slider{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.player-slider__bar{
+    background-color: rgba(255, 255, 255, 0.3);
+    flex-grow: 1;
+    padding: 3px;
+    border-radius: 999px;
+    position: relative;
+}
+
+.player-slider__bar-fill{
+    background-color: white;
+    width: 20%;
+    padding: 3px;
+    border-radius: 999px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    cursor: pointer;    
+}
+
+
+.slide__bar-circle{
+    color: var(--light);
+    position: absolute;
+    left: 90%;
+    bottom: -7px;
+    opacity: 0;
+}
+
+.slide__bar-circle:hover{
+    opacity: 1;
+}
+
+.player-slider__bar-fill:hover{
+    background-color: #ADFF2F;
+    opacity: 1;
+}
 
 /* media query */
 
