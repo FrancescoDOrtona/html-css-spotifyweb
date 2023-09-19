@@ -274,6 +274,7 @@ img{
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-list__item:hover{
