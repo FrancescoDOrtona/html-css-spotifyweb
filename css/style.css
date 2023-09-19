@@ -66,6 +66,11 @@ img{
     color: var(--light);
 }
 
+.hover-white:hover{
+    color: var(--light);
+}
+
+
 /* App divisions */
 
 .app{
@@ -103,6 +108,16 @@ img{
     aspect-ratio: 1;
 }
 
+.toolbar__current-name{
+    font-weight: bold;
+}
+
+.toolbar__current-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 .toolbar__current-icon{
     margin-left: 30px;
     display: flex;
@@ -131,12 +146,17 @@ img{
     font-size: 30px;
 }
 
+.player-icons__play:hover{
+    transform: scale(1.2);
+}
+
 /* toolbar media player slider */
 
 .toolbar__player-slider{
     display: flex;
     align-items: center;
     gap: 25px;
+    cursor: pointer;
 }
 
 .player-slider__bar{
@@ -187,6 +207,7 @@ img{
 
 .toolbar__utility-volume{
    flex-grow: 1;
+   cursor: pointer;
 }
 
 /* media query */
