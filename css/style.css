@@ -62,6 +62,10 @@ img{
     font-size: 25px;
 }
 
+.text-bold{
+    font-weight: bold;
+}
+
 .text-grey{
     color: var(--light-grey);
 }
@@ -72,6 +76,7 @@ img{
 
 .hover-white:hover{
     color: var(--light);
+    cursor: pointer;
 }
 
 
@@ -92,6 +97,8 @@ img{
 /* Side bar */
 
 .app__side-bar{
+    display: flex;
+    flex-direction: column;
     width: 230px;
     background-color: var(--dark);
     flex-shrink: 0;
@@ -147,6 +154,9 @@ img{
 
 .side-bar__playlist{
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
 }
 
 .playlist__title{
@@ -174,6 +184,7 @@ img{
 .side-bar__playlist-items{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     gap: 24px;
     font-size: 13px;
     font-weight: bold;
@@ -184,6 +195,34 @@ img{
     cursor: pointer;
 }
 
+/* Side bar footer */
+
+.side-bar__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 20px;
+    padding-bottom: 7px;
+}
+
+.side-bar__footer-inst{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+
+.side-bar__footer-account{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-account__icon{
+    font-size: 30px;
+    cursor: pointer;
+}
 
 /* App content */
 
