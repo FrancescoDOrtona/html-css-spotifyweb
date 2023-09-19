@@ -23,3 +23,30 @@ img{
     max-width: 100%;
     display: block;
 }
+
+/* App divisions */
+
+.app{
+    display: flex;
+    flex-direction: column;
+}
+
+.app__content{
+    display: flex;
+    flex-grow: 1;
+}
+
+.app__toolbar{
+    height: 90px;
+}
+
+/* debug */
+
+
+.debug .app__content{
+    border: 1px dashed red;
+}
+
+.debug .app__toolbar{
+    border: 1px dashed blue;
+}
