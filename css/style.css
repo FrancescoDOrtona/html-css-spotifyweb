@@ -84,6 +84,12 @@ img{
 }
 
 
+.circle-img{
+    border-radius: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
 /* App divisions */
 
 .app{
@@ -315,31 +321,56 @@ img{
 /* Main content playlists */
 
 .playlists{
-    padding: 0px 20px;
+    padding: 20px;
     overflow: hidden;
 }
 
 .playlists__content{
     display:flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
     gap: 15px;
+    margin-bottom: 40px;
 }
 
+
 .playlists__title{
-    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+
+.playlists__title h2{
+    font-size: 25px;
+    color: var(--light);
 }
 
 .playlists__album{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    flex-basis: calc((100% / 6) - 15px);
 }
 
 .playlists__album>img{
-    width: 180px;
     aspect-ratio: 1;
+}
+
+.album__title{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.album__subtitle{
+    font-size: 13px;
+    color: var(--light-grey);
+    font-weight: bold;
+}
+
+.playlists__subtitle{
+    color: var(--light-grey);
+    font-size: 13px;
+    padding-top: 15px;
+    font-weight: bold;
 }
 
 /* toolbar */
