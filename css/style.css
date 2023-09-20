@@ -79,6 +79,10 @@ img{
     cursor: pointer;
 }
 
+.hover-scale:hover{
+    transform: scale(1.2);
+}
+
 
 /* App divisions */
 
@@ -98,11 +102,16 @@ img{
 
 .app__side-bar{
     display: flex;
-    flex-direction: column;
     width: 230px;
     background-color: var(--dark);
     flex-shrink: 0;
     color: var(--light-grey);
+}
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%; 
 }
 
 .side-bar__logo{
@@ -126,10 +135,11 @@ img{
     align-items: center;
     gap: 10px;
     padding: 7px 0px;
-    padding-left: 20px;
+    padding-left: 17px;
     font-weight: bold;
     color: var(--light-grey);
     font-size: 13px;
+    border-left: 3px solid transparent;
 }
 
 .menu-items__img{
@@ -201,6 +211,7 @@ img{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 7px;
 }
@@ -291,10 +302,11 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
 }
 
 /* Current song */
@@ -348,9 +360,6 @@ img{
     font-size: 30px;
 }
 
-.player-icons__play:hover{
-    transform: scale(1.2);
-}
 
 /* toolbar media player slider */
 
@@ -481,14 +490,14 @@ img{
     }
 
     .side-bar__menu-items{
-        padding-left: 15px;
+        padding-left: 12px;
     }
 
     .menu-items__description{
         display: none;
     }
 
-    .side-bar__playlist{
+    .side-bar__playlist, .side-bar__footer{
         display: none;
     }
  }

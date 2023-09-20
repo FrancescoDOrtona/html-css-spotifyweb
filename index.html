@@ -21,59 +21,60 @@
       <!-- side bar + app content -->
 			<aside class="app__side-bar">
 				<!-- Side bar logo big & logo small hidden -->
-
-				<figure class="side-bar__logo">
-					<img src="./img/logo.svg" alt="">
-				</figure>
-				<figure class="side-bar__logo-sm">
-					<img src="./img/logo-small.svg" alt="">
-				</figure>
-
-				<!-- Side bar Home, Search library wiith hidden text -->
-				<ul class="side-bar__menu">
-					<li class="side-bar__menu-items">
-						<img class="menu-items__img" src="./img/home.svg" alt="">
-						<span class="menu-items__description">Home</span>
-					</li>
-					<li class="side-bar__menu-items">
-						<img class="menu-items__img" src="./img/search.svg" alt="">
-						<span class="menu-items__description">Cerca</span>
-					</li>
-					<li class="side-bar__menu-items">
-						<img class="menu-items__img" src="./img/libreria.svg" alt="">
-						<span class="menu-items__description">La tua libreria</span>
-					</li>
-				</ul>
-
-				<!-- Side bar playlist -->
-				<div class="side-bar__playlist">
-					<h3 class="playlist__title">Playlist</h3>
-					<ul class="side-bar__playlist-items">
-						<li class="playlist__create">
-							<i class="playlist__create-icon fa-solid fa-square-plus"></i>
-							<span class="playlist__create-text">Crea Playlist</span>
-						</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-						<li>Nome Playlist</li>
-					</ul>
-
-					<!-- Side bar footer -->
-					<div class="side-bar__footer">
-						<div class="side-bar__footer-inst">
-							<span class="hover-white"><i class="fa-regular fa-circle-down"></i></span>
-							<span class="small-text hover-white">Installa app</span>
-						</div>
-						<div class="side-bar__footer-account">
-							<span class="footer-account__icon"><i class="fa-regular fa-circle-user"></i></span>
-							<span class="medium-text text-white text-bold">John Doe</span>
-						</div>
-					</div>
-				</div>
+        <div class="side-bar">
+          <figure class="side-bar__logo">
+            <img src="./img/logo.svg" alt="">
+          </figure>
+          <figure class="side-bar__logo-sm">
+            <img src="./img/logo-small.svg" alt="">
+          </figure>
+  
+          <!-- Side bar Home, Search library wiith hidden text -->
+          <ul class="side-bar__menu">
+            <li class="side-bar__menu-items">
+              <img class="menu-items__img" src="./img/home.svg" alt="">
+              <span class="menu-items__description">Home</span>
+            </li>
+            <li class="side-bar__menu-items">
+              <img class="menu-items__img" src="./img/search.svg" alt="">
+              <span class="menu-items__description">Cerca</span>
+            </li>
+            <li class="side-bar__menu-items">
+              <img class="menu-items__img" src="./img/libreria.svg" alt="">
+              <span class="menu-items__description">La tua libreria</span>
+            </li>
+          </ul>
+  
+          <!-- Side bar playlist -->
+          <div class="side-bar__playlist">
+            <h3 class="playlist__title">Playlist</h3>
+            <ul class="side-bar__playlist-items">
+              <li class="playlist__create">
+                <i class="playlist__create-icon fa-solid fa-square-plus"></i>
+                <span class="playlist__create-text">Crea Playlist</span>
+              </li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
+            <!-- Side bar footer -->
+            <div class="side-bar__footer">
+              <div class="side-bar__footer-inst">
+                <span class="hover-white"><i class="fa-regular fa-circle-down"></i></span>
+                <span class="small-text hover-white">Installa app</span>
+              </div>
+              <div class="side-bar__footer-account">
+                <span class="footer-account__icon"><i class="fa-regular fa-circle-user"></i></span>
+                <span class="medium-text text-white text-bold">John Doe</span>
+              </div>
+            </div>          
+        </div>
+				
 			</aside>
 
 			<!-- App main content -->
@@ -91,6 +92,8 @@
 						<li class="nav-list__item"><a href="#">Scopri</a></li>
 					</ul>
 				</nav>
+
+				<!-- Main content playlists -->
 			</section>
     </main>
 
@@ -108,10 +111,10 @@
 					</div>
 					<div class="toolbar__current-icon">
 						<span>
-							<a href="#"><i class="hover-white text-grey fa-regular fa-heart"></i></a>
+							<a href="#"><i class="hover-white hover-scale text-grey fa-regular fa-heart"></i></a>
 						</span>
 						<span>
-							<a href="#"><i class="hover-white text-grey fa-regular fa-folder"></i></a>
+							<a href="#"><i class="hover-white hover-scale text-grey fa-regular fa-folder"></i></a>
 						</span>	
 					</div>																									
 				</div>
@@ -121,7 +124,7 @@
 					<ul class="toolbar__player-icons">
 						<li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
 						<li><a href="#"><i class=" fa-solid fa-backward-step"></i></a></li>
-						<li class="player-icons__play"><a href="#"><i class="fa-regular fa-circle-play"></i></a></li>
+						<li class="player-icons__play hover-scale"><a href="#"><i class="fa-regular fa-circle-play"></i></a></li>
 						<li><a href="#"><i class=" fa-solid fa-forward-step"></i></a></li>
 						<li><a href="#"><i class="fa-solid fa-rotate-right"></i></a></li>
 					</ul>
@@ -142,9 +145,9 @@
 
 				<!-- Toolbar Utility icons -->
 					<ul class="toolbar__utility">
-						<li><i class="fa-solid fa-list-ul"></i></li>
-						<li><i class="fa-solid fa-display"></i></li>
-						<li><i class="fa-solid fa-volume-high"></i></li>
+						<li><i class="hover-scale fa-solid fa-list-ul"></i></li>
+						<li><i class="hover-scale fa-solid fa-display"></i></li>
+						<li><i class="hover-scale fa-solid fa-volume-high"></i></li>
 						<li class="toolbar__utility-volume">
 							<div class="player-slider__bar ">
 								<div class="player-slider__bar-fill">
