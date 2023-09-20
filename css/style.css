@@ -517,7 +517,13 @@ img{
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 
+    .playlists__content{
+        flex-wrap: wrap;
+    }
 
+    .playlists__album{
+        flex-basis: calc((100% / 4) - 15px);
+    }
 
 }
 
@@ -539,6 +545,9 @@ img{
         display: none;
     }
 
+    .playlists__album{
+        flex-basis: calc((100% / 2) - 15px);
+    }
  }
 
  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
