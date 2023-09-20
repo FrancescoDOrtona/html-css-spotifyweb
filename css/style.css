@@ -497,8 +497,21 @@ img{
         display: none;
     }
 
-    .side-bar__playlist, .side-bar__footer{
+    .side-bar__playlist {
         display: none;
+    }
+
+    .side-bar__menu{
+        flex-grow: 1;
+    }
+
+    .side-bar__footer{
+        padding-left: 13px;
+        align-items: center;
+    }
+
+    .side-bar__footer-inst{
+        border-bottom: none;
     }
  }
 
