@@ -95,6 +95,7 @@ img{
     display: flex;
     flex-grow: 1;
     background-color: var(--dark-blue);
+    max-height: calc(100vh - 90px);
 }
 
 /* Main */
@@ -106,6 +107,7 @@ img{
     background-color: var(--dark);
     flex-shrink: 0;
     color: var(--light-grey);
+    z-index: 1;
 }
 
 .side-bar{
@@ -240,6 +242,7 @@ img{
 
 .app__content{
     flex-grow: 1;
+    overflow: auto;
 }
 
 /* Main content header */
@@ -251,7 +254,9 @@ img{
     height: 90px;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
-    position: sticky;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
 .header-button{
@@ -268,7 +273,7 @@ img{
 }
 
 .app__content-nav{
-    padding: 20px;
+    padding-top: 110px;
 }
 
 .nav-list{
@@ -307,6 +312,36 @@ img{
     background-color: var(--green);
 }
 
+/* Main content playlists */
+
+.playlists{
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+.playlists__content{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.playlists__title{
+    flex-basis: 100%;
+}
+
+.playlists__album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.playlists__album>img{
+    width: 180px;
+    aspect-ratio: 1;
+}
+
 /* toolbar */
 
 .app__toolbar{
@@ -316,7 +351,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
